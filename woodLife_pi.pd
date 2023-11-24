@@ -1,6 +1,6 @@
 #N struct 1004-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1004-scope-element array vector-max 1004-scope-element float curx;
 #N struct 1004-scope-element float y;
-#N canvas 336 25 835 837 12;
+#N canvas 89 25 1248 847 12;
 #X floatatom 475 107 5 0 0 0 - - - 0;
 #X obj 665 88 notein;
 #X obj 672 136 pack 0 0;
@@ -51,7 +51,7 @@
 #X msg 459 707 0;
 #X msg 493 708 1;
 #X obj 467 663 sel 0 1;
-#X obj 461 751 s 1-record_rcv;
+#X obj 455 786 s 1-record_rcv;
 #X obj 370 734 print;
 #X obj 581 513 print;
 #X msg 701 711 \; pd dsp 1;
@@ -60,6 +60,15 @@
 #X obj 468 604 r digital0;
 #X obj 264 626 change;
 #X obj 468 636 change;
+#X obj 609 698 +;
+#X floatatom 609 722 5 0 0 0 - - - 0;
+#X obj 607 752 % 4;
+#X obj 612 776 sel 0 1 2 3;
+#X obj 590 858 s 1-newsound;
+#X msg 587 816 boop.wav;
+#X msg 673 817 chick.wav;
+#X msg 755 822 hello.wav;
+#X msg 830 822 musicbox.wav;
 #X connect 0 0 41 0;
 #X connect 1 0 2 0;
 #X connect 1 1 2 1;
@@ -107,7 +116,7 @@
 #X connect 46 0 44 0;
 #X connect 46 1 43 0;
 #X connect 47 0 50 0;
-#X connect 48 0 50 0;
+#X connect 48 0 59 0;
 #X connect 49 0 48 0;
 #X connect 49 1 47 0;
 #X connect 54 0 53 0;
@@ -115,3 +124,15 @@
 #X connect 56 0 58 0;
 #X connect 57 0 46 0;
 #X connect 58 0 49 0;
+#X connect 59 0 60 0;
+#X connect 60 0 59 1;
+#X connect 60 0 61 0;
+#X connect 61 0 62 0;
+#X connect 62 0 64 0;
+#X connect 62 1 65 0;
+#X connect 62 2 66 0;
+#X connect 62 3 67 0;
+#X connect 64 0 63 0;
+#X connect 65 0 63 0;
+#X connect 66 0 63 0;
+#X connect 67 0 63 0;
