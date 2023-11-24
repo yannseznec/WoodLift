@@ -104,7 +104,9 @@
 #X connect 37 0 38 0;
 #X connect 38 0 20 0;
 #X connect 39 0 41 0;
+#X connect 39 0 63 0;
 #X connect 40 0 41 0;
+#X connect 40 0 63 0;
 #X connect 42 0 40 0;
 #X connect 42 1 39 0;
 #X connect 43 0 46 0;
@@ -116,7 +118,6 @@
 #X connect 49 0 51 0;
 #X connect 50 0 52 0;
 #X connect 51 0 42 0;
-#X connect 51 0 63 0;
 #X connect 52 0 45 0;
 #X connect 53 0 54 0;
 #X connect 54 0 53 1;
