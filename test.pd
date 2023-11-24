@@ -8,6 +8,8 @@
 #X obj 198 270 *~ 0.3;
 #X obj 198 294 dac~;
 #X obj 211 124 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 410 279 loadbang;
+#X msg 410 303 \; pd dsp 1;
 #X connect 0 0 6 0;
 #X connect 1 0 4 0;
 #X connect 2 0 1 0;
@@ -17,3 +19,4 @@
 #X connect 6 0 7 0;
 #X connect 6 0 7 1;
 #X connect 8 0 2 0;
+#X connect 9 0 10 0;
