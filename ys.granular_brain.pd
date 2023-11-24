@@ -557,8 +557,8 @@
 #X obj 783 47 array define \$1-poly_grain-L;
 #X obj 784 78 array define \$1-poly_grain-R;
 #X obj 100 476 r \$1-newsound;
-#X obj 60 245 clone y_grain_mono 8 \$1;
-#X msg 338 200 8;
+#X obj 60 245 clone y_grain_mono 4 \$1;
+#X msg 338 200 4;
 #X connect 1 0 5 0;
 #X connect 3 0 86 0;
 #X connect 4 0 1 0;
