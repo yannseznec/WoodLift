@@ -22,6 +22,8 @@
 #X obj 349 491 *~;
 #X msg 427 435 \$1 5;
 #X obj 427 459 line~;
+#X msg 701 711 \; pd dsp 1;
+#X obj 695 679 loadbang;
 #X connect 1 0 14 0;
 #X connect 2 0 5 0;
 #X connect 3 0 6 0;
@@ -45,3 +47,4 @@
 #X connect 20 0 13 1;
 #X connect 21 0 22 0;
 #X connect 22 0 20 1;
+#X connect 24 0 23 0;
