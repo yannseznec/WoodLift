@@ -43,6 +43,7 @@
 #X floatatom 374 345 5 0 0 0 - - - 0;
 #X obj 429 459 osc~ 300;
 #X obj 318 294 + 50;
+#X obj 410 382 print;
 #X connect 1 0 12 0;
 #X connect 2 0 5 0;
 #X connect 3 0 6 0;
@@ -78,4 +79,5 @@
 #X connect 38 0 25 0;
 #X connect 40 0 39 0;
 #X connect 40 0 28 0;
+#X connect 41 0 44 0;
 #X connect 43 0 7 0;
