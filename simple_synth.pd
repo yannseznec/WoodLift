@@ -1,4 +1,4 @@
-#N canvas 11 214 758 558 12;
+#N canvas 46 211 1067 661 12;
 #X obj 76 124 teensy_comport;
 #X obj 309 26 r analog0;
 #X floatatom 318 155 5 0 0 0 - - - 0;
@@ -22,8 +22,9 @@
 #X obj 349 491 *~;
 #X msg 427 435 \$1 5;
 #X obj 427 459 line~;
-#X msg 701 711 \; pd dsp 1;
-#X obj 695 679 loadbang;
+#X msg 575 238 \; pd dsp 1;
+#X obj 569 206 loadbang;
+#X obj 512 362 print;
 #X connect 1 0 14 0;
 #X connect 2 0 5 0;
 #X connect 3 0 6 0;
@@ -43,6 +44,7 @@
 #X connect 17 1 15 0;
 #X connect 18 0 19 0;
 #X connect 19 0 17 0;
+#X connect 19 0 25 0;
 #X connect 20 0 13 0;
 #X connect 20 0 13 1;
 #X connect 21 0 22 0;
